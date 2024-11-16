@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miki's private assistant</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/dropdown.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="chat-layout">
+      <div class="chat-container">
+        <div class="chat-header">
+          <div class="ai-info">
+            <div class="ai-avatar">
+              <img src="./assets/miki.jpg" alt="miki" srcset="" />
+            </div>
+            <h1>Miki's private assistant</h1>
+          </div>
+          <div class="settings-container">
+            <button class="settings-btn">⚙️</button>
+            <div class="settings-dropdown" id="settingsDropdown">
+              <ul class="dropdown-menu">
+                <!-- <li class="dropdown-divider"></li> -->
+                <li>
+                  <button class="dropdown-item"><span>⚙️</span>Settings</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-messages">
+          <div class="message ai-message"></div>
+          <div class="message user-message"></div>
+        </div>
+
+        <div class="chat-input">
+          <div class="input-container">
+            <textarea placeholder="Message" rows="1"></textarea>
+            <button class="send-btn">➤</button>
+          </div>
+          <!-- <div class="features">
+            <button class="feature-btn">🎤</button>
+            <button class="feature-btn">📎</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/dropdown.js"></script>
+</html>
